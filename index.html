@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/segoe-pro" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>GithubFinder</title>
 </head>
 
 <body>
-    <header>
+    <nav>
         <div class="navbar">
             <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
-            <nav>
+            <div class="links">
                 <div class="close">
                     <span class="iconify" data-icon="bi:x-lg" data-inline="false"></span>
                 </div>
@@ -196,18 +196,161 @@
                 <div>
                     <ul>
                         <input type="text" name="" id="" placeholder="Search">
+                        <span class="tooltip">Type username here</span>
                         <li><a href="">Sign in</a></li>
                         <li><a href="" class="sign-up">Sign up</a></li>
                     </ul>
                 </div>
-            </nav>
+            </div>
             <div class="mobile">
                 <a href="" class="sign-up">Sign up</a>
                 <span class="iconify" data-icon="heroicons-outline:menu" data-inline="false"></span>
+                <span class="tooltip">Click and search username</span>
             </div>
         </div>
+    </nav>
+    <header class="header-desktop">
+        <ul>
+            <div></div>
+            <li>
+                <a href=""><span class="iconify" data-icon="feather:book-open" data-inline="false"></span>Overview</a>
+            </li>
+            <li>
+                <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>Repositories</a>
+            </li>
+            <li>
+                <a href=""><span class="iconify" data-icon="octicon:project-16" data-inline="false"></span>Projects</a>
+            </li>
+            <li>
+                <a href=""><span class="iconify" data-icon="octicon:package-16" data-inline="false"></span>Packages</a>
+            </li>
+        </ul>
     </header>
-    
+    <main>
+        <aside>
+            <div>
+                <img src="https://avatars.githubusercontent.com/u/40441899?v=4" alt="avatar">
+                <div class="names">
+                    <h1>pawel-mielech</h1>
+                    <h3>Pabeloszh</h3>
+                </div>
+            </div>
+            <button>Follow</button>
+            <p>desc</p>
+            <ul>
+                <li>
+                    <p><span class="iconify" data-icon="octicon:organization-16" data-inline="false"></span>itDesk</p>
+                </li>
+                <li>
+                    <p><span class="iconify" data-icon="akar-icons:location" data-inline="false"></span>Opole</p>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="fa-solid:link" data-inline="false"></span>link</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>@paweumiel</a>
+                </li>
+            </ul>
+            <a href="">Block or Report</a>
+        </aside>
+        <header class="header-mobile">
+            <ul>
+                <li>
+                    <a href=""><span class="iconify" data-icon="feather:book-open" data-inline="false"></span>Overview</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>Repositories</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="octicon:project-16" data-inline="false"></span>Projects</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="octicon:package-16" data-inline="false"></span>Packages</a>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <div class="repos">
+                <h4>Pinned</h4>
+                <div class="repos__list">
+                    <div class="repos__list__repo">
+                        <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>repo-name</a>
+                        <p>desc</p>
+                        <span>tech</span>
+                    </div>
+                    <div class="repos__list__repo">
+                        <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>repo-name</a>
+                        <p>desc</p>
+                        <span>tech</span>
+                    </div>
+                    <div class="repos__list__repo">
+                        <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>repo-name</a>
+                        <p>desc</p>
+                        <span>tech</span>
+                    </div>
+                    <div class="repos__list__repo">
+                        <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>repo-name</a>
+                        <p>desc</p>
+                        <span>tech</span>
+                    </div>
+                    <div class="repos__list__repo">
+                        <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>repo-name</a>
+                        <p>desc</p>
+                        <span>tech</span>
+                    </div>
+                    <div class="repos__list__repo">
+                        <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>repo-name</a>
+                        <p>desc</p>
+                        <span>tech</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <p>&copy; 2021 GitHub, Inc.</p>
+            </li>
+            <li>
+                <a href="">Terms</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+            <li>
+                <a href="">Security</a>
+            </li>
+            <li>
+                <a href="">Status</a>
+            </li>
+            <li>
+                <a href="">Docs</a>
+            </li>
+        </ul>
+        <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
+        <ul>
+            <li>
+                <a href="">Contact GitHub</a>
+            </li>
+            <li>
+                <a href="">Pricing</a>
+            </li>
+            <li>
+                <a href="">API</a>
+            </li>
+            <li>
+                <a href="">Training</a>
+            </li>
+            <li>
+                <a href="">Blog</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+        </ul>
+        
+    </footer>
     <script src="script.js"></script>
 </body>
 

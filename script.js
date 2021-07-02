@@ -5,7 +5,9 @@ const closeMenu = document.querySelector(".close svg");
 class UI {
   constructor() {
     this.dropdownMenu = document.querySelectorAll(".dropdown__menu");
-    this.appMenu = document.querySelector(".navbar nav");
+    this.appMenu = document.querySelector(".links");
+    this.tooltipDesktop = document.querySelector(".links .tooltip");
+    this.tooltips = document.querySelectorAll(".tooltip");
   }
 
   toggleDropdown(index) {
@@ -17,9 +19,19 @@ class UI {
   toggleMenu() {
     this.appMenu.classList.toggle("menuToggled");
   }
+  showTooltip() {
+    this.tooltips.forEach((tt) => {
+      tt.classList.add("desktop-active");
+      setTimeout(() => {
+        tt.classList.remove("desktop-active");
+      }, 5000);
+    });
+  }
 }
 
 const ui = new UI();
+
+window.onload = () => ui.showTooltip();
 
 Array.from(dropdown).forEach((dd, index) => {
   dd.addEventListener("click", () => ui.toggleDropdown(index));
