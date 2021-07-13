@@ -1,4 +1,4 @@
-const languages = [
+export const languages = [
   {
     name: "Mercury",
     color: "#ff2b2b",
