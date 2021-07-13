@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="http://fonts.cdnfonts.com/css/segoe-pro" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet">
+    <meta property="og:image" content="https://github.githubassets.com/images/modules/site/social-cards/github-social.png">
+    <meta property="og:image:alt" content="Simple GithubFinder made in JavaScript, with GitHub UI">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="GitHub: Where the world builds software">
+    <meta property="og:url" content="https://pabeloszh.github.io/github-finder/">
+    <meta property="og:description" content="GitHub is where over 65 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and feat...">
+    <meta name="description" content="Simple GithubFinder made in JavaScript, with GitHub UI">
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon-dark.png" type="image/x-icon" />
+    <title>GithubFinder</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
+            <div class="links">
+                <div class="close">
+                    <span class="iconify" data-icon="bi:x-lg" data-inline="false"></span>
+                </div>
+                <div>
+                    <ul>
+                        <li class="dropdown">
+                            <p>Why Github?<span class="iconify" data-icon="akar-icons:chevron-down" data-inline="false"></span></p>
+                            <div class="dropdown__menu">
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/features" class="highlighted">Features</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/mobile">Mobile</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/actions">Actions</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/codespaces">Codespaces</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/packages">Packages</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/security">Security</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/code-review/">Code review</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/issues/">Issues</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/features/integrations">Integrations</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="https://github.com/sponsors" class="highlighted">GitHub Sponsors</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/customer-stories?type=enterprise" class="highlighted">Customer stories</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://github.com/team">Team</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/enterprise">Enterprise</a>
+                        </li>
+                        <li class="dropdown">
+                            <p>Explore<span class="iconify" data-icon="akar-icons:chevron-down" data-inline="false"></span></p>
+                            <div class="dropdown__menu">
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/explore" class="highlighted">Explore Github</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <p>Learn and contribute</p>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/topics">Topics</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/collections">Collections</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/trending">Trending</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://lab.github.com/">Learning Lab</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://opensource.guide/">Open source guides</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <p>Connect with others</p>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/readme">The ReadME Project</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/events">Events</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.community/">Community forum</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://education.github.com/">GitHub Eductaion</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://stars.github.com/">GitHub Stars program</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://github.com/marketplace">Marketplace</a>
+                        </li>
+                        <li class="dropdown">
+                            <p>Pricing<span class="iconify" data-icon="akar-icons:chevron-down" data-inline="false"></span></p>
+                            <div class="dropdown__menu">
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/pricing" class="highlighted">Plans</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/pricing#feature-comparison">Compare plans</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <li>
+                                        <a href="https://enterprise.github.com/contact">Contact Sales</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="https://education.github.com/" class="highlighted">Education</a>
+                                        <span class="iconify" data-icon="fa-solid:long-arrow-alt-right"
+                                            data-inline="false"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <input value="Pabeloszh" type="text" placeholder="Search">
+                        <span class="tooltip">Type username here</span>
+                        <li><a href="https://github.com/login">Sign in</a></li>
+                        <li><a href="https://github.com/signup" class="sign-up">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile">
+                <a href="https://github.com/signup" class="sign-up">Sign up</a>
+                <div class="menu">
+                    <span class="iconify" data-icon="heroicons-outline:menu" data-inline="false"></span>
+                </div>
+                <span class="tooltip">Click and search username</span>
+            </div>
+        </div>
+    </nav>
+    <header class="header-desktop">
+        <ul>
+            <div></div>
+            <li class="active">
+                <a href=""><span class="iconify" data-icon="feather:book-open" data-inline="false"></span>Overview</a>
+            </li>
+            <li>
+                <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>Repositories</a>
+            </li>
+            <li>
+                <a href=""><span class="iconify" data-icon="octicon:project-16" data-inline="false"></span>Projects</a>
+            </li>
+            <li>
+                <a href=""><span class="iconify" data-icon="octicon:package-16" data-inline="false"></span>Packages</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <div>
+            </div>
+            <button>Follow</button>
+            <p class="desc"></p>
+            <ul>
+            </ul>
+            <a class="block" href="">Block or Report</a>
+        </aside>
+        <header class="header-mobile">
+            <ul>
+                <li class="active">
+                    <a href=""><span class="iconify" data-icon="feather:book-open" data-inline="false"></span>Overview</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>Repositories</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="octicon:project-16" data-inline="false"></span>Projects</a>
+                </li>
+                <li>
+                    <a href=""><span class="iconify" data-icon="octicon:package-16" data-inline="false"></span>Packages</a>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <div class="repos">
+                <h3>Pinned</h3>
+                <div class="repos__list">
+                </div>
+            </div>
+        </section>
+        <div class="alert">
+            <h5><span class="iconify" data-icon="akar-icons:circle-alert-fill" data-inline="false"></span>User not found</h5>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <p>&copy; 2021 GitHub, Inc.</p>
+            </li>
+            <li>
+                <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">Terms</a>
+            </li>
+            <li>
+                <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">Privacy</a>
+            </li>
+            <li>
+                <a href="https://github.com/security">Security</a>
+            </li>
+            <li>
+                <a href="https://www.githubstatus.com/">Status</a>
+            </li>
+            <li>
+                <a href="https://docs.github.com/en">Docs</a>
+            </li>
+        </ul>
+        <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
+        <ul>
+            <li>
+                <a href="https://support.github.com/">Contact GitHub</a>
+            </li>
+            <li>
+                <a href="https://github.com/pricing">Pricing</a>
+            </li>
+            <li>
+                <a href="https://docs.github.com/en">API</a>
+            </li>
+            <li>
+                <a href="https://services.github.com/">Training</a>
+            </li>
+            <li>
+                <a href="https://github.blog/">Blog</a>
+            </li>
+            <li>
+                <a href="https://github.com/about">About</a>
+            </li>
+        </ul>
+        
+    </footer>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
