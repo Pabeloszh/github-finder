@@ -1,5 +1,3 @@
-import "./style.scss";
-import { languages } from "./languages.js";
 let windowWidth = window.innerWidth;
 const dropdown = document.querySelectorAll(".dropdown");
 const hamburgerMenu = document.querySelector(".mobile .menu");
@@ -71,7 +69,11 @@ class UI {
     let namesName = document.createElement("h1");
     let namesLogin = document.createElement("h1");
     let company, city, blog, twitter;
-    company = city = blog = twitter = document.createElement("li");
+
+    company = document.createElement("li");
+    city = document.createElement("li");
+    blog = document.createElement("li");
+    twitter = document.createElement("li");
 
     image.src = data.avatar_url;
     image.alt = `${data.name}_avatar`;
@@ -131,16 +133,18 @@ class UI {
 
 class GitHub {
   constructor() {
+    // this.client_id = "";
+    // this.client_secret = "";
     this.repos_count = 6;
     this.repos_sort = "created: asc";
   }
 
   async getUser(user) {
     const profileResponse = await fetch(
-      `https://api.github.com/users/${user}?client_id${process.env.CLIENT_ID}&client_secret${process.env.CLIENT_SECRET}`
+      `https://api.github.com/users/${user}?client_id${this.client_id}&client_secret${this.client_secret}`
     );
     const reposResponse = await fetch(
-      `https://api.github.com/users/${user}/repos?per_page=${this.repos_count}&sort=${this.repos_sort}&client_id${process.env.CLIENT_ID}&client_secret${process.env.CLIENT_SECRET}`
+      `https://api.github.com/users/${user}/repos?per_page=${this.repos_count}&sort=${this.repos_sort}&client_id${this.client_id}&client_secret${this.client_secret}`
     );
 
     const profileData = await profileResponse.json();
