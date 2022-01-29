@@ -345,6 +345,7 @@ main {
       font-size: 16px;
       line-height: 1.5;
       color: $font-primary-color;
+      word-wrap: break-word
     }
     ul {
       margin-bottom: 16px;
@@ -354,6 +355,7 @@ main {
         overflow: hidden;
         text-overflow: ellipsis;
         color: $font-primary-color;
+        white-space: nowrap;
         a,
         p {
           font-size: 14px;

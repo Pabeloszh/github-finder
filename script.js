@@ -69,7 +69,11 @@ class UI {
     let namesName = document.createElement("h1");
     let namesLogin = document.createElement("h1");
     let company, city, blog, twitter;
-    company = city = blog = twitter = document.createElement("li");
+
+    company = document.createElement("li");
+    city = document.createElement("li");
+    blog = document.createElement("li");
+    twitter = document.createElement("li");
 
     image.src = data.avatar_url;
     image.alt = `${data.name}_avatar`;
@@ -165,6 +169,7 @@ window.onload = () => {
   search.value = "";
   ui.showTooltip();
   github.getUser("Pabeloszh").then((data) => {
+    console.log(data);
     ui.showUserData(data.profileData);
     ui.changeHeaderLinks(data.profileData, headerDesktop);
     ui.changeHeaderLinks(data.profileData, headerMobile);

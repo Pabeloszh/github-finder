@@ -447,6 +447,7 @@ main aside p {
   font-size: 16px;
   line-height: 1.5;
   color: #f0f6fc;
+  word-wrap: break-word;
 }
 
 main aside ul {
@@ -459,6 +460,7 @@ main aside ul li {
   overflow: hidden;
   text-overflow: ellipsis;
   color: #f0f6fc;
+  white-space: nowrap;
 }
 
 main aside ul li a,
