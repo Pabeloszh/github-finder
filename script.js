@@ -169,7 +169,6 @@ window.onload = () => {
   search.value = "";
   ui.showTooltip();
   github.getUser("Pabeloszh").then((data) => {
-    console.log(data);
     ui.showUserData(data.profileData);
     ui.changeHeaderLinks(data.profileData, headerDesktop);
     ui.changeHeaderLinks(data.profileData, headerMobile);
